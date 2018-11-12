@@ -11,8 +11,16 @@ Sortie attendue:
 
  */
 
-function getPositiveNumbers(numbers) {
-}
+ function getPositiveNumbers(numbers){
+
+
+const filtration = numbers.filter(function(result){ 
+  return result >= 0;
+});
+return filtration
+ }
+
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node filter/ex1
@@ -20,3 +28,5 @@ function getPositiveNumbers(numbers) {
 
 // Ne pas modifier l'export
 module.exports = getPositiveNumbers;
+
+

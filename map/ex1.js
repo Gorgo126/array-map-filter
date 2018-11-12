@@ -21,8 +21,18 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
-}
+function getStringsLength(mots) {
+
+  const result = mots.map(function(truc) {
+    return truc + " " + "contains" + " " + truc.length + " " + "characters";
+  });
+  return result
+  }
+  getStringsLength(['Chicken', 'Bacon', 'Tofu', 'Mayonnaise'])
+
+
+
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1
@@ -30,3 +40,4 @@ function getStringsLength(strings) {
 
 // Ne pas modifier l'export
 module.exports = getStringsLength;
+
